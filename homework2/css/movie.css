@@ -1,0 +1,118 @@
+body {
+	background-image: url(../pictures/background.png);
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+#banner {
+	background: url(../pictures/bannerbackground.png);
+	background-repeat: repeat;
+	text-align: center;
+	height: 50px;
+}
+#MovieHeadings {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+#maincontent {
+	margin: auto;
+	width: 800px;
+	border: 4px gray solid;
+	overflow: hidden;
+}
+#leftpart {
+	width: 550px;
+	overflow: hidden;
+	float: left;
+}
+
+#leftRightPercent {
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+#leftRightTotal {
+	font-size: 8pt;
+	color: white;
+}
+#leftTop {
+	background-image: url(../pictures/rottenbackground.png);
+	height: 83px;
+}
+#leftTop img {
+	float: left;
+}
+#leftComment {
+	width: 47%;
+	margin-left: 1%;
+	margin-right: 2%;
+	float: left;
+}
+#rightComment {
+	width: 47%;
+	margin-left: 2%;
+	margin-right: 1%;
+	float: right;
+}
+
+.quote {
+	font-weight: bold;
+	font-size: 8pt;
+	background-color: #E1D697;
+	border: 2px solid gray;
+	margin-top: 8px;
+}
+.quote img{
+	float: left;
+	margin-right: 5px;
+	overflow: hidden;
+}
+.quote p{
+	margin: 8px;
+}
+#special p{
+	padding-bottom: 10px;
+}
+.person img{
+	float: left;
+	margin-right: 5px;
+}
+.person {
+	margin-bottom: 3em;
+}
+#rightpart {
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+}
+#generalOverview {
+	padding: 10px;
+}
+dt {
+	margin-top: 1em;
+	font-weight: bold;
+}
+#bottom {
+	background-color: #A2B964;
+	clear: both;
+	text-align: center;
+}
+#bottom p {
+	margin: 0pt;
+	padding: 5px;
+}
+#isValid {
+	position: fixed;
+	bottom: 0pt;
+	right: 0pt;
+}
+.publication {
+	font-style: italic;
+}
