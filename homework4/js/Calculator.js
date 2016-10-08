@@ -167,5 +167,18 @@ window.onload = function() {
 		eval("result = "+expression);
 		document.getElementById("result").value = result;
 		}
+		/*
+		我试过用如下这个方法，有一些小问题比如9**9这个表达式被认为是9的9次方的意思，
+		但是一般用户都是作为不合理表达式来处理的，所以我自己写了一个判断函数
+		try {
+		eval("result = "+expression);
+		document.getElementById("result").value = result;
+		}
+		catch(SyntaxError) {
+			alert("invalid input! please input the right expresion");
+			expression = "";
+			document.getElementById("expression").value = expression;
+		}
+		*/
 	}
 }
