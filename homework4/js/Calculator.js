@@ -165,6 +165,7 @@ window.onload = function() {
 			document.getElementById("expression").value = expression;
 		} else {
 		eval("result = "+expression);
+		result = Math.round(result * 1e6) / 1e6;
 		document.getElementById("result").value = result;
 		}
 		/*
