@@ -1,9 +1,11 @@
 var expression = "";
 var result = "";
+/*
 var leftBraceNumber = 0;
 var rightBraceNumber = 0;
+*/
 
-
+/*
 function warning() {
 	//首尾异常处理
 	if (expression[0] == '+' || expression[0] == '-' || expression[0] == '*' || expression[0] == '/' || expression[0] == '.' || expression[0] == ')') return false;
@@ -55,7 +57,7 @@ function warning() {
 	if (leftBraceNumber != rightBraceNumber) return false;
 	return true;
 }
-
+*/
 
 window.onload = function() {
 	//点击数字，先让数字出现在上方的expression里面
@@ -158,6 +160,7 @@ window.onload = function() {
 		document.getElementById("result").value = "";
 	}
 	document.getElementById("equal").onclick = function() {
+		/*
 		if (!warning()) {
 			//运算表达式错误的话给出提示，并清空输入
 			alert("invalid input! please input the right expresion");
@@ -168,11 +171,10 @@ window.onload = function() {
 		result = Math.round(result * 1e6) / 1e6;
 		document.getElementById("result").value = result;
 		}
-		/*
-		我试过用如下这个方法，有一些小问题比如9**9这个表达式被认为是9的9次方的意思，
-		但是一般用户都是作为不合理表达式来处理的，所以我自己写了一个判断函数
+		*/
 		try {
 		eval("result = "+expression);
+		result = Math.round(result * 1e6) / 1e6;
 		document.getElementById("result").value = result;
 		}
 		catch(SyntaxError) {
@@ -180,6 +182,5 @@ window.onload = function() {
 			expression = "";
 			document.getElementById("expression").value = expression;
 		}
-		*/
 	}
 }
